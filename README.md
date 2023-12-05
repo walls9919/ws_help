@@ -1,8 +1,9 @@
 # ws_help
 Help command to bring up Tailwind UI which displays commands and keybinds default to their script
 
-#Read before use
+# Read before use
 This script is nowhere close to being finished. Its a thing that I've thought a long time to make this and now I've decided to make it and release the code to public so other people can also contribute to it!
+If anybody wants they can create their own script useing my idea and share it with me since I'm in desperate need of this script :D
 
 # Purpose of the "release"
 To learn more about coding overall since I am a beginner in coding and maybe even pursue it later in life.
