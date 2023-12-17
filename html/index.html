@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles.css" type="text/css">
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
+        <title>Käsiraamat</title>
+    </head>
+    <body>
+        <div id="container" class="flex items-center justify-center h-screen">
+            <div class="max-w-2xl mx-auto w-full h-600 bg-gray-900">
+                <img src="./images/logo.png" alt='logo' class="h-32 w-32 rounded-full mt-3 mx-auto ">
+                <div class="flex-grow bg-gray-900 p-4 overflow-y-scroll h-96">
+                    <div class="flex flex-col gap-6">
+                        <div class="bg-gray-800 p-4 rounded-md text-center text-white">
+                            <h2 class="text-xl mb-4">NUPUD</h2>
+                            <p>Siin on kõik tavalised keybindid erinevatele tegevustele, mis teil vaja läheb</p>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-md text-center text-white">
+                            <h2 class="text-xl">F1</h2>
+                            <p>Avab Telefoni</p>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-md text-center text-white">
+                            <h2 class="text-xl">F2</h2>
+                            <p>Avab seljakoti</p>
+                        </div>
+                        <!-- Add more boxes related to "NUPUD" as needed -->
+                  
+                        <div class="bg-gray-800 p-4 rounded-md text-center text-white">
+                            <h2 class="text-xl mb-4">COMMANDID</h2>
+                            <p>Siin on kõik tavalised keybindid erinevatele tegevustele, mis teil vaja läheb</p>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-md text-center text-white">
+                            <h2 class="text-xl">/ABI</h2>
+                            <p>Avab selle sama menüü</p>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-md text-center text-white">
+                            <h2 class="text-xl">/report</h2>
+                            <p>Loob kaebuse A-Tiimile</p>
+                        </div>
+                        <!-- Add more boxes related to "COMMANDID" as needed -->
+                    </div>
+                </div>
+                <button id="close" class="bg-red-700 text-white p-2 rounded-md flex flex-col m-3 mx-auto focus:outline-none">Sulge</button>
+            </div>
+        </div>
+        <script src="./script.js" type="text/javascript"></script>
+    </body>
+</html>
