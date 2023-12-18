@@ -1,128 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
-    <title>Playa De Las Käsiraamat</title>
-    <style>
-        body {
-            cursor: pointer !important;
-        }
-    </style>
-</head>
-
-<style>
-    /* CSS Styles */
-    .bg-gray-900 {
-        /* Your background styles */
-        height: 100vh; /* Setting the background height to the viewport height */
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start; /* Aligning content at the top */
-        position: relative; /* Setting position to relative for absolute positioning of elements */
-    }
-
-    /* Adjust the header height */
-    .custom-header {
-        height: 125px; /* Set your desired height for the header */
-    }
-
-    /* Position the image */
-    .header-image {
-        position: absolute;
-        top: 0;
-        left: 50%; /* Centering the image horizontally */
-        transform: translateX(-50%);
-        z-index: 1; /* Ensuring image is above other elements */
-    }
-</style>
-
-<body class="bg-gray-900 text-white">
-    <div class="flex flex-col">
-        <!-- Image on top -->
-        <div class="header-image">
-            <img src="https://i.imgur.com/FIL8Ht5.png" alt="Logo" class="h-32 w-32 rounded-full mt-0">
-        </div>
-
-        <!-- Header -->
-        <header class="flex justify-between items-center p-4 custom-header">
-            <button id="exit-button" class="bg-transparent border border-white rounded-md px-3 py-1">Sulge</button>
-        </header>
-    </div>
-</body>
-
-
-
-
-        <!-- Main Content -->
-        <div class="flex flex-grow">
-            <!-- Sidebar -->
-            <div class="bg-gray-800 w-16 flex flex-col items-center">
-            </div>
-
-            <!-- Content -->
-            <div class="flex-grow bg-gray-700 p-4">
-                <div class="grid grid-cols-2 gap-4">
-                    <div class="bg-gray-600 p-4 rounded-md text-center">
-                        <h2 class="text-xl">NUPUD</h2>
-                        <p>Siin on kõik tavalised keybindid erinevatele tegevustele mis teil vaja läheb</p>
-                    </div>
-                    <div class="bg-gray-600 p-4 rounded-md text-center">
-                        <h2 class="text-xl">COMMANDID</h2>
-                        <p>Siin on kõik tavalised commandid erinevatele tegevustele mis teil vaja läheb</p>
-                    </div>
-                    <div class="bg-gray-600 p-4 rounded-md text-center">
-                        <h2 class="text-xl">F1</h2>
-                        <p>Avab Telefoni</p>
-                    </div>
-                    <div class="bg-gray-600 p-4 rounded-md text-center">
-                        <h2 class="text-xl">/ABI</h2>
-                        <p>Avab selle sama menüü</p>
-                    </div>
-                    <div class="bg-gray-600 p-4 rounded-md text-center">
-                        <h2 class="text-xl">F2</h2>
-                        <p>Avab seljakoti</p>
-                    </div>
-                    <div class="bg-gray-600 p-4 rounded-md text-center">
-                        <h2 class="text-xl">/report</h2>
-                        <p>Loob kaebuse A-Tiimile</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles.css" type="text/css">
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
+        <title>Käsiraamat</title>
+    </head>
+    <body>
+        <div id="container" class="flex items-center justify-center h-screen">
+            <div class="max-w-2xl mx-auto w-full h-600 bg-gray-900">
+                <img src="./images/logo.png" alt='logo' class="h-32 w-32 rounded-full mt-3 mx-auto ">
+                <div class="flex-grow bg-gray-900 p-4 overflow-y-scroll h-96">
+                    <div class="flex flex-col gap-6">
+                        <div class="bg-gray-800 p-4 rounded-md text-center text-white">
+                            <h2 class="text-xl mb-4">NUPUD</h2>
+                            <p>Siin on kõik tavalised keybindid erinevatele tegevustele, mis teil vaja läheb</p>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-md text-center text-white">
+                            <h2 class="text-xl">F1</h2>
+                            <p>Avab Telefoni</p>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-md text-center text-white">
+                            <h2 class="text-xl">F2</h2>
+                            <p>Avab seljakoti</p>
+                        </div>
+                        <!-- Add more boxes related to "NUPUD" as needed -->
+                  
+                        <div class="bg-gray-800 p-4 rounded-md text-center text-white">
+                            <h2 class="text-xl mb-4">COMMANDID</h2>
+                            <p>Siin on kõik tavalised keybindid erinevatele tegevustele, mis teil vaja läheb</p>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-md text-center text-white">
+                            <h2 class="text-xl">/ABI</h2>
+                            <p>Avab selle sama menüü</p>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-md text-center text-white">
+                            <h2 class="text-xl">/report</h2>
+                            <p>Loob kaebuse A-Tiimile</p>
+                        </div>
+                        <!-- Add more boxes related to "COMMANDID" as needed -->
                     </div>
                 </div>
+                <button id="close" class="bg-red-700 text-white p-2 rounded-md flex flex-col m-3 mx-auto focus:outline-none">Sulge</button>
             </div>
         </div>
-
-        <!-- Footer -->
-        <footer class="flex justify-center items-center bg-gray-800 p-4">
-            <span>Playa De Las Käsiraamat</span>
-        </footer>
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"></script>
-
-    <script>
-        // Add event listener to exit button
-        document.getElementById("exit-button").addEventListener("click", function() {
-            // Perform desired action when the button is clicked
-            console.log("Exit button clicked!");
-        });
-
-        // Add event listener to keybinds link
-        document.getElementById("keybinds-link").addEventListener("click", function() {
-            // Perform desired action when the link is clicked
-            console.log("Keybinds link clicked!");
-        });
-
-        // Add event listener to commands link
-        document.getElementById("commands-link").addEventListener("click", function() {
-            // Perform desired action when the link is clicked
-            console.log("Commands link clicked!");
-        });
-    </script>
-</body>
-
+        <script src="./script.js" type="text/javascript"></script>
+    </body>
 </html>

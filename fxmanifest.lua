@@ -2,19 +2,17 @@ fx_version 'cerulean'
 game 'gta5'
 
 name 'PDL Help'
-author 'wallsxd'
+author 'wallsxd & atluzka'
 description 'Displays commands and keybind information'
-version '1.0.0'
+version '1.0.1'
 
+client_scripts {"client/*.js"}
 
-ui_page 'html/index.html'
-
-files {
-    'html/index.html',
-    'server.lua',
-    'client.js'
+ui_page {
+    'html/index.html'
 }
 
-dependencies {
-    'mysql-async'
+files {
+    'html/*.*',
+    'html/images/*.*'
 }
