@@ -15,9 +15,14 @@ If you want to create a Pull Request you are free to do so but it would be nice 
 Discord: wallsxd
 
 # Known issues
-* Cursor wont show
-* Player can move when the UI is displayed
+~~* Cursor wont show~~
+~~* Player can move when the UI is displayed~~
 * First time joiners don't get the UI displayed automatically after creating their character
-* UI is too big (Should be a little thinner so you could actually see what is going on in the background)
+~~* UI is too big (Should be a little thinner so you could actually see what is going on in the background)~~
 * UI Opens as soon as you start the script, no way to close it but stop the script
 * Text bubbles should be sexier
+* Ensure the entire UI adjusts to fit within the UI size, eliminating the need for scrolling to see keybinds/commands that may be currently off-screen.
+
+
+# Credit
+Special thanks to [Atluzka](https://github.com/Atluzka) for stepping in and helping to make the script partially functional!
